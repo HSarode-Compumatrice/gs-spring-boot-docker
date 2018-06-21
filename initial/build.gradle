@@ -9,7 +9,10 @@ buildscript {
 }
 group = 'springio'
 
-apply plugin: 'com.palantir.docker'
+plugins {
+  id "com.palantir.docker" version "0.19.2"
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
